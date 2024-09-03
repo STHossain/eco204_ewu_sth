@@ -1,0 +1,109 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole site, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: ECO 204@EWU
+tagline: ECO 204 - Statistics For Business and Economics - II
+description: Welcome to the Course!
+author: Shaikh Tanvir Hossain
+# baseurl: '/teaching/eco204' # the subpath of your site, e.g. /blog
+# url: 'https://sthossain.github.io/'
+
+url: 'https://sthossain.github.io/eco204_ewu_sth/'
+
+#baseurl: '/' # the subpath of your site, e.g. /blog
+# url: 'https://sthossain.github.io/teaching/eco204' # the base hostname & protocol for your site, e.g. http://example.com
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
+# Theme settings
+remote_theme: just-the-docs/just-the-docs@v0.9.0
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+permalink: pretty
+aux_links:
+  Shaikh Tanvir Hossain:
+    - 'https://sthossain.github.io/'
+
+footer_content: "Copyright &copy; 2023-2024 Shaikh Tanvir Hossain. Originally used the Jekyll template just the docs with <a href=\"https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt\">MIT license </a>, <a href=\"https://www.netlify.com/\">powered by Netlify</a>. This website has been last modified by Shaikh Tanvir Hossain."
+
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
+  goodnews:
+    title: Good News
+    color: green
+
+# Collections for website data
+collections:
+  staffers:
+  modules:
+  schedules:
+  announcements:
+# Default layouts for each collection type
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-include-cache
+  - jemoji
+  - jekyll-last-modified-at
+  - jekyll-pdf-embed
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+
+
+
+defaults:
+  -
+    scope:
+      path: "docs" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "default"
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+
+liquid:
+  error_mode: strict
+  strict_filters: true
+
+
